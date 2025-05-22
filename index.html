@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisanal Coffee Experience</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B4513',
+                        secondary: '#D2691E'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        .hero-section {
+            background-image: url('https://readdy.ai/api/search-image?query=modern%20luxury%20coffee%20shop%20interior%20with%20warm%20lighting%2C%20wooden%20elements%2C%20and%20artisanal%20coffee%20preparation%20station%2C%20professional%20barista%20brewing%20coffee%2C%20minimalist%20aesthetic%20with%20natural%20materials%2C%20high-end%20coffee%20equipment%20displayed%2C%20soft%20ambient%20lighting%20creating%20cozy%20atmosphere&width=1920&height=800&seq=1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-white">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <img src="coffee.png" alt="Logo" class="w-12 h-12 object-contain">
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-primary font-medium">Home</a>
+                <a href="https://readdy.ai/home/fa799db1-c256-4ac4-b5bb-b018c1c4cc48/b0473ca4-76c3-4d73-a904-b8b677dbdeeb"
+                    data-readdy="true" class="text-gray-600 hover:text-primary">Menu</a>
+                <a href="#" class="text-gray-600 hover:text-primary">About</a>
+                <a href="#" class="text-gray-600 hover:text-primary">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search..."
+                        class="pl-10 pr-4 py-2 w-40 rounded-full bg-gray-100 border-none text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
+                    <div
+                        class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center text-gray-400">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+                <button class="relative w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
+                    <i class="ri-shopping-cart-line text-xl"></i>
+                    <span
+                        class="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-primary text-white text-xs rounded-full">3</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section relative">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative max-w-7xl mx-auto px-4 py-32">
+            <div class="max-w-xl text-white">
+                <h1 class="text-5xl font-bold mb-6">Experience Artisanal Coffee Excellence</h1>
+                <p class="text-xl mb-8">Carefully sourced beans, expertly roasted and crafted into extraordinary coffee
+                    experiences.</p>
+                <button
+                    class="!rounded-button bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-medium">Order
+                    Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20coffee%20photography%20of%20cappuccino%20in%20elegant%20white%20ceramic%20cup%20on%20wooden%20table%2C%20perfect%20latte%20art%2C%20soft%20natural%20lighting%2C%20minimalist%20composition%20with%20blurred%20cafe%20background&width=400&height=300&seq=2&orientation=landscape"
+                        alt="Cappuccino" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Signature Cappuccino</h3>
+                        <p class="text-gray-600 mb-4">Rich espresso topped with velvety steamed milk and perfect latte
+                            art</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold">LKR 1480.00</span>
+                            <button class="!rounded-button bg-primary hover:bg-primary/90 text-white px-4 py-2">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20coffee%20photography%20of%20iced%20caramel%20latte%20in%20tall%20glass%20with%20whipped%20cream%20and%20caramel%20drizzle%2C%20condensation%20on%20glass%2C%20wooden%20table%20setting%2C%20soft%20natural%20lighting&width=400&height=300&seq=3&orientation=landscape"
+                        alt="Iced Caramel Latte" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Iced Caramel Latte</h3>
+                        <p class="text-gray-600 mb-4">Smooth espresso with caramel, milk, and ice, topped with whipped
+                            cream</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold">LKR 2540.00</span>
+                            <button class="!rounded-button bg-primary hover:bg-primary/90 text-white px-4 py-2">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20coffee%20photography%20of%20pour%20over%20coffee%20being%20made%20with%20chemex%2C%20steam%20rising%2C%20barista%20pouring%20hot%20water%2C%20wooden%20table%20setting%2C%20coffee%20beans%20scattered%20around&width=400&height=300&seq=4&orientation=landscape"
+                        alt="Pour Over" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Artisanal Pour Over</h3>
+                        <p class="text-gray-600 mb-4">Hand-crafted pour over using single-origin beans for perfect
+                            clarity</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold">LKR 1800.00</span>
+                            <button class="!rounded-button bg-primary hover:bg-primary/90 text-white px-4 py-2">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="coffee.png" alt="Logo" class="w-12 h-12 rounded-full border-2 border-white object-cover">
+
+                    <p class="text-sm">
+                        <span class="block">Crafting exceptional coffee experiences</span>
+                        <span class="block">since 2020</span>
+                      </p>
+                      
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact Us</h4>
+                    <address class="not-italic text-sm space-y-2">
+                        <p>123 Coffee Street</p>
+                        <p>Nugegoda, Colombo, Sri Lanka</p>
+                        <p>Tel: (011) 123-4567</p>
+                        <p>Email: hello@logo.com</p>
+                    </address>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Hours</h4>
+                    <div class="text-sm space-y-2">
+                        <p>Mon-Fri: 7:00 AM - 8:00 PM</p>
+                        <p>Sat-Sun: 8:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Your email"
+                                class="w-full px-4 py-2 bg-gray-800 border-none rounded-lg text-sm">
+                        </div>
+                        <button
+                            class="!rounded-button w-full bg-primary hover:bg-primary/90 text-white px-4 py-2">Subscribe</button>
+                    </form>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white hover:text-primary">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white hover:text-primary">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white hover:text-primary">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="text-sm hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-white">Terms of Service</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-visa-line text-2xl"></i>
+                    </div>
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-mastercard-line text-2xl"></i>
+                    </div>
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-paypal-line text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
